@@ -1,0 +1,4 @@
+node_modules
+/lib
+.idea/
+test1.ts

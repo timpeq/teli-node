@@ -1,0 +1,29 @@
+export default class CreateCustomerResponse {
+    id: number;
+    postpay: string;
+    master_id: number;
+    reseller_id?: number;
+    user_type: string;
+    username: string;
+    email: string;
+    first_name: string;
+    last_name: string;
+    phone_number: number;
+    address: string;
+    city: string;
+    state: string;
+    zip: number;
+    user_status: string;
+    low_balance_amount: number;
+    credit_line: number;
+    chanlimit_outbound: number;
+    chanlimit_inbound: number;
+    max_international: number;
+    sms_post_url: string;
+    sms_delivery_url?: string;
+    web_hook_url?: string;
+    fees_percent: number;
+    did_sbc: string;
+    restricted: string;
+    sso_key: string;
+}
