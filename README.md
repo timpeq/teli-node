@@ -11,7 +11,7 @@ The documentation for the Tele API can be found [here](https://apidocs.teleapi.n
 
 ## Basic Example
 ```typescript
-import { Teli } from "https://raw.githubusercontent.com/timpeq/teli-node/teli-deno/src/index.ts"
+import { Teli } from "https://raw.githubusercontent.com/timpeq/teli-node/master/src/index.ts"
 
 const callApiSIDToken = Deno.env.get("TELI_CALL_API_SID_TOKEN"); // Your Call API SID Token from https://control.teli.net
 const apiToken = Deno.env.get("TELI_API_TOKEN");   // Your API Token from https://control.teli.net
