@@ -11,26 +11,29 @@ export default class HttpClient {
         method: string,
         url: string,
         data: any = {},
-        additionalConfig: Partial<RequestInit> = {},
+//        additionalConfig: Partial<RequestInit> = {}, // TODO: Is this used anywhere?
     ): Promise<T> {
-        const config: RequestInit = {
+        let config:RequestInit;
+        config = {
             method: method,
-            ...additionalConfig,
         };
+
+        if (method === "POST" || method ==="PUT"){
+          config.body = data;
+        }
+
 
         Object.keys(data).forEach((key) => {
             if (data[key] === null || data[key] === '') {
-                console.debug(`http fetch is removing blank or null data. Key: ${key}  Data: ${data}`);
+                console.debug(`http-client is removing blank or null data. Key: ${key}  Data: ${data}`);
                 delete data[key];
             }
         });
 
         var fetchURL = new URL(url);
-        fetchURL.search = new URLSearchParams({token:this.apiToken}).toString();
+        fetchURL.search = new URLSearchParams({token:this.apiToken, ...data}).toString();
     
         const response = await fetch(fetchURL, config);
-
         return response.json();
-        
     }
 }
