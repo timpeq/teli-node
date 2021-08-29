@@ -1,4 +1,4 @@
-export default class Fax{
+export default interface Fax{
     id: number;
     did_id: number;
     fax_status: string;

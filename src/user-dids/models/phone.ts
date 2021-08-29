@@ -1,4 +1,4 @@
-export default class Phone {
+export default interface Phone {
     id: number;
     user_id: number;
     user_name: string;

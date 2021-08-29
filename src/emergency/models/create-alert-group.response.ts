@@ -1,4 +1,4 @@
-export default class CreateAlertGroupResponse{
+export default interface CreateAlertGroupResponse{
     id: number;
     user_id: number;
     group_name: string;

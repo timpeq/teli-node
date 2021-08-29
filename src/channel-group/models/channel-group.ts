@@ -1,4 +1,4 @@
-export default class ChannelGroup {
+export default interface ChannelGroup {
     id: number;
     user_id: number;
     channel_group_name: string;

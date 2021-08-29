@@ -1,4 +1,4 @@
-export default class AlertGroup{
+export default interface AlertGroup{
     id: number;
     user_id: number;
     group_name: string;

@@ -1,4 +1,4 @@
-export default class Subuser {
+export default interface Subuser {
     id: number;
     username: string;
     email: string;

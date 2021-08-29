@@ -1,13 +1,13 @@
-import HttpClient from "../../shared/http/http-client";
-import IEmergencyBuilder from "../contracts/emergency-builder.interface";
-import Create911RecordDto from "../models/create-911-record.dto";
-import Validate911RecordDto from "../models/validate-911-record.dto";
-import AssignNumberTo911AlertGroupDto from "../models/assign-number-to-911-alert-group.dto";
-import AddNotificationToAlertGroupDto from "../models/add-notification-to-alert-group.dto";
-import UnassignNumberTo911AlertGroupDto from "../models/unassign-number-to-911-alert-group.dto";
-import Emergency from "../models/emergency";
-import AlertGroup from "../models/alert-group";
-import CreateAlertGroupResponse from "../models/create-alert-group.response";
+import HttpClient from "../../shared/http/http-client.ts";
+import IEmergencyBuilder from "../contracts/emergency-builder.interface.ts";
+import Create911RecordDto from "../models/create-911-record.dto.ts";
+import Validate911RecordDto from "../models/validate-911-record.dto.ts";
+import AssignNumberTo911AlertGroupDto from "../models/assign-number-to-911-alert-group.dto.ts";
+import AddNotificationToAlertGroupDto from "../models/add-notification-to-alert-group.dto.ts";
+import UnassignNumberTo911AlertGroupDto from "../models/unassign-number-to-911-alert-group.dto.ts";
+import Emergency from "../models/emergency.ts";
+import AlertGroup from "../models/alert-group.ts";
+import CreateAlertGroupResponse from "../models/create-alert-group.response.ts";
 
 const EmergencyBuilder = (httpClient: HttpClient): IEmergencyBuilder => {
     return {

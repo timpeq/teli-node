@@ -1,13 +1,13 @@
-import HttpClient from "../../shared/http/http-client";
-import MakeCallDto from "../models/make-call.dto";
-import CreateCallQueueDto from "../models/create-call-queue.dto";
-import CreateCallClientDto from "../models/create-call-client.dto";
-import CallQueue from "../models/call-queue";
-import Call from "../models/call";
-import {generateQueryString} from "../../shared/url/url-formatter";
-import ChangeClientPasswordDto from "../models/change-client-password.dto";
-import Client from "../models/client";
-import ICallApiBuilder from "../contracts/call-api-builder.interface";
+import HttpClient from "../../shared/http/http-client.ts";
+import MakeCallDto from "../models/make-call.dto.ts";
+import CreateCallQueueDto from "../models/create-call-queue.dto.ts";
+import CreateCallClientDto from "../models/create-call-client.dto.ts";
+import CallQueue from "../models/call-queue.ts";
+import Call from "../models/call.ts";
+import {generateQueryString} from "../../shared/url/url-formatter.ts";
+import ChangeClientPasswordDto from "../models/change-client-password.dto.ts";
+import Client from "../models/client.ts";
+import ICallApiBuilder from "../contracts/call-api-builder.interface.ts";
 
 const CallApiBuilder = (httpClient: HttpClient): ICallApiBuilder => {
     return {

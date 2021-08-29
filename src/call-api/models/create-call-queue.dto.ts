@@ -1,7 +1,7 @@
-export default class CreateCallQueueDto {
+export default interface CreateCallQueueDto {
     applicationUrl: string;
-    applicationUrlMethod?: string = 'POST'
+    applicationUrlMethod?: string
     phoneNumber: number;
     override?: boolean;
-    byoc?: boolean = true;
+    byoc?: boolean;
 }

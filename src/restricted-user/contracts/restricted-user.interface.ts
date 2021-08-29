@@ -1,9 +1,9 @@
-import CreateRestrictedUserDto from "../models/create-restricted-user.dto";
-import UpdateRestrictedUserDto from "../models/update-restricted-user.dto";
-import UpdateBrandingDto from "../../user/models/update-branding.dto";
-import RestrictedUser from "../models/restricted-user";
-import RestrictedUserRates from "../models/restricted-user-rates";
-import RestrictedUserGroupPermission from "../models/restricted-user-group-permission";
+import CreateRestrictedUserDto from "../models/create-restricted-user.dto.ts";
+import UpdateRestrictedUserDto from "../models/update-restricted-user.dto.ts";
+import UpdateBrandingDto from "../../user/models/update-branding.dto.ts";
+import RestrictedUser from "../models/restricted-user.ts";
+import RestrictedUserRates from "../models/restricted-user-rates.ts";
+import RestrictedUserGroupPermission from "../models/restricted-user-group-permission.ts";
 
 export default interface IRestrictedUserBuilder {
     /**

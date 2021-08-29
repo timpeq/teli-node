@@ -1,4 +1,4 @@
-export default class RestrictedUser {
+export default interface RestrictedUser {
     id: number;
     reseller_id: number;
     username: string;

@@ -1,5 +1,5 @@
-import CNAMLookup from "../models/cnam-lookup";
-import Ownership from "../models/ownership";
+import CNAMLookup from "../models/cnam-lookup.ts";
+import Ownership from "../models/ownership.ts";
 
 export default interface ILookupBuilder {
     /**

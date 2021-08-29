@@ -1,10 +1,10 @@
-import HttpClient from "../../shared/http/http-client";
-import IDidsBuilderInterface from "../contracts/dids-builder.interface";
-import State from "../models/state";
-import ListLocalNumberDto from "../models/list-local-number.dto";
-import OrderSingleNumberDto from "../models/order-single-number.dto";
-import InternationalCountryDto from "../models/international-country.dto";
-import InternationalStateDto from "../models/international-state.dto";
+import HttpClient from "../../shared/http/http-client.ts";
+import IDidsBuilderInterface from "../contracts/dids-builder.interface.ts";
+import State from "../models/state.ts";
+import ListLocalNumberDto from "../models/list-local-number.dto.ts";
+import OrderSingleNumberDto from "../models/order-single-number.dto.ts";
+import InternationalCountryDto from "../models/international-country.dto.ts";
+import InternationalStateDto from "../models/international-state.dto.ts";
 
 const DidsBuilder = (httpClient: HttpClient): IDidsBuilderInterface =>{
     return{

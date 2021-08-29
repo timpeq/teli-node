@@ -1,7 +1,7 @@
-import HttpClient from "../../shared/http/http-client";
-import IFaxBuilder from "../contracts/fax-builder.interface";
-import SendFaxDto from "../models/send-fax.dto";
-import Fax from "../models/fax";
+import HttpClient from "../../shared/http/http-client.ts";
+import IFaxBuilder from "../contracts/fax-builder.interface.ts";
+import SendFaxDto from "../models/send-fax.dto.ts";
+import Fax from "../models/fax.ts";
 
 const FaxBuilder = (httpClient: HttpClient): IFaxBuilder => {
     return {

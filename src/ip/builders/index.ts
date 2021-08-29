@@ -1,7 +1,7 @@
-import HttpClient from "../../shared/http/http-client";
-import IIPBuilder from "../contracts/ip-builder.interface";
-import CreateIpEndpointDto from "../models/create-ip-endpoint.dto";
-import Ip from "../models/ip";
+import HttpClient from "../../shared/http/http-client.ts";
+import IIPBuilder from "../contracts/ip-builder.interface.ts";
+import CreateIpEndpointDto from "../models/create-ip-endpoint.dto.ts";
+import Ip from "../models/ip.ts";
 
 const IPBuilder = (httpClient: HttpClient): IIPBuilder => {
     return {

@@ -1,6 +1,6 @@
-import HttpClient from "../../shared/http/http-client";
-import ILNPBuilder from "../contracts/lnp-builder.interface";
-import CreateLnpOrderDto from "../models/create-lnp-order.dto";
+import HttpClient from "../../shared/http/http-client.ts";
+import ILNPBuilder from "../contracts/lnp-builder.interface.ts";
+import CreateLnpOrderDto from "../models/create-lnp-order.dto.ts";
 
 const LNPBuilder = (httpClient: HttpClient): ILNPBuilder => {
     return {

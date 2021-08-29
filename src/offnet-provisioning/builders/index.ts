@@ -1,5 +1,5 @@
-import HttpClient from "../../shared/http/http-client";
-import IOffnetProvisioningBuilder from "../contracts/offnet-provisioning-builder.interface";
+import HttpClient from "../../shared/http/http-client.ts";
+import IOffnetProvisioningBuilder from "../contracts/offnet-provisioning-builder.interface.ts";
 
 const OffnetProvisioningBuilder = (httpClient: HttpClient): IOffnetProvisioningBuilder => {
     return {

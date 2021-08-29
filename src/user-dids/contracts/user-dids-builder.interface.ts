@@ -1,11 +1,11 @@
-import Phone from "../models/phone";
-import DisableCnamDto from "../models/disable-cnam.dto";
-import EnableCnamDto from "../models/enable-cnam.dto";
-import SetPhoneListingDto from "../models/set-phone-listing.dto";
-import SetCallForwardingDto from "../models/set-call-forwarding.dto";
-import CreateFlowDto from "../models/create-flow.dto";
-import UpdateFlowDto from "../models/update-flow.dto";
-import {NumberTypeEnum} from "../enums/number-type.enum";
+import Phone from "../models/phone.ts";
+import DisableCnamDto from "../models/disable-cnam.dto.ts";
+import EnableCnamDto from "../models/enable-cnam.dto.ts";
+import SetPhoneListingDto from "../models/set-phone-listing.dto.ts";
+import SetCallForwardingDto from "../models/set-call-forwarding.dto.ts";
+import CreateFlowDto from "../models/create-flow.dto.ts";
+import UpdateFlowDto from "../models/update-flow.dto.ts";
+import {NumberTypeEnum} from "../enums/number-type.enum.ts";
 
 export default interface IUserDidsBuilderInterface{
     /**

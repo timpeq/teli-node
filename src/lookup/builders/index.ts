@@ -1,7 +1,7 @@
-import HttpClient from "../../shared/http/http-client";
-import ILookupBuilder from "../contracts/lookup-builder.interface";
-import CNAMLookup from "../models/cnam-lookup";
-import Ownership from "../models/ownership";
+import HttpClient from "../../shared/http/http-client.ts";
+import ILookupBuilder from "../contracts/lookup-builder.interface.ts";
+import CNAMLookup from "../models/cnam-lookup.ts";
+import Ownership from "../models/ownership.ts";
 
 const LookupBuilder = (httpClient: HttpClient): ILookupBuilder => {
     return {

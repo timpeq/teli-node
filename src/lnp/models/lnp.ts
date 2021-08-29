@@ -1,4 +1,4 @@
-export default class Lnp {
+export default interface Lnp {
     id: number;
     btn: number;
     location_type: string;

@@ -1,3 +1,3 @@
-export default class ChangeClientPasswordDto {
+export default interface ChangeClientPasswordDto {
     Password: string;
 }

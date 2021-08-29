@@ -1,5 +1,5 @@
-import SendSmsDto from "../models/send-sms.dto";
-import GetSmsRecordDto from "../models/get-sms-record.dto";
+import SendSmsDto from "../models/send-sms.dto.ts";
+import GetSmsRecordDto from "../models/get-sms-record.dto.ts";
 
 export default interface ISMSBuilder {
     /**

@@ -1,4 +1,4 @@
-export default class RestrictedUserRates{
+export default interface RestrictedUserRates{
     standard_local_mrc: number;
     standard_local_nrc: number;
     standard_local_pm: number;

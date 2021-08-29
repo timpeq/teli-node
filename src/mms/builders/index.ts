@@ -1,7 +1,7 @@
-import HttpClient from "../../shared/http/http-client";
-import SendMmsEmbedDto from "../models/send-mms-embed.dto";
-import SendMmsUrlDto from "../models/send-mms-url.dto";
-import IMMSBuilder from "../contracts/mms-builder.interface";
+import HttpClient from "../../shared/http/http-client.ts";
+import SendMmsEmbedDto from "../models/send-mms-embed.dto.ts";
+import SendMmsUrlDto from "../models/send-mms-url.dto.ts";
+import IMMSBuilder from "../contracts/mms-builder.interface.ts";
 
 const MMSBuilder = (httpClient: HttpClient): IMMSBuilder => {
     return {

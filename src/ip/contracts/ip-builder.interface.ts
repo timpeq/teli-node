@@ -1,5 +1,5 @@
-import CreateIpEndpointDto from "../models/create-ip-endpoint.dto";
-import Ip from "../models/ip";
+import CreateIpEndpointDto from "../models/create-ip-endpoint.dto.ts";
+import Ip from "../models/ip.ts";
 
 export default interface IIPBuilder {
     /**

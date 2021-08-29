@@ -1,5 +1,5 @@
-import SendMmsEmbedDto from "../models/send-mms-embed.dto";
-import SendMmsUrlDto from "../models/send-mms-url.dto";
+import SendMmsEmbedDto from "../models/send-mms-embed.dto.ts";
+import SendMmsUrlDto from "../models/send-mms-url.dto.ts";
 
 export default interface IMMSBuilder {
     /**

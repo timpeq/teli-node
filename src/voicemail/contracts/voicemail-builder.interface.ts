@@ -1,6 +1,6 @@
-import CreateVoicemailAccountDto from "../models/create-voicemail-account.dto";
-import UpdateVoicemailAccountDto from "../models/update-voicemail-account.dto";
-import Voicemail from "../models/voicemail";
+import CreateVoicemailAccountDto from "../models/create-voicemail-account.dto.ts";
+import UpdateVoicemailAccountDto from "../models/update-voicemail-account.dto.ts";
+import Voicemail from "../models/voicemail.ts";
 
 export default interface IVoicemailBuilder {
     /**

@@ -1,4 +1,4 @@
-export default class LnpNumber{
+export default interface LnpNumber{
     lnp_request_id: string;
     internal_order_id: string;
     number: string;

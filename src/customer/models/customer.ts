@@ -1,4 +1,4 @@
-export default class Customer{
+export default interface Customer{
     id: number;
     reseller_id?: number;
     username: string;

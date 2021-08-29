@@ -1,6 +1,6 @@
-import CreateSipAccountDto from "../models/create-sip-account.dto";
-import UpdateSipAccountDto from "../models/update-sip-account.dto";
-import SIP from "../models/sip";
+import CreateSipAccountDto from "../models/create-sip-account.dto.ts";
+import UpdateSipAccountDto from "../models/update-sip-account.dto.ts";
+import SIP from "../models/sip.ts";
 
 export default interface ISIPBuilder {
     /**

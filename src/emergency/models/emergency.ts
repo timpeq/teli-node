@@ -1,4 +1,4 @@
-export default class Emergency{
+export default interface Emergency{
     id: number;
     did_id: number;
     did_number: number;

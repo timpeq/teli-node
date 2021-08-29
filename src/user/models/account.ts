@@ -1,4 +1,4 @@
-export default class Account {
+export default interface Account {
     id: number;
     admin_signup_id?: number;
     invoice_terms: string;

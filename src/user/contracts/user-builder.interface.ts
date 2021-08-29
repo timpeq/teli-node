@@ -1,19 +1,19 @@
-import BillingDetailSummaryDto from "../models/billing-detail-summary.dto";
-import UpdateAccountInfoDto from "../models/update-account-info.dto";
-import UpdatePasswordDto from "../models/update-password.dto";
-import UpdateBrandingDto from "../models/update-branding.dto";
-import CreateSubUserDto from "../models/create-sub-user.dto";
-import UpdateSubUserDto from "../models/update-sub-user.dto";
-import UpdateFraudSettingsDto from "../models/update-fraud-settings.dto";
-import GetInvoiceDto from "../models/get-invoice.dto";
-import GetInvoiceByEmailDto from "../models/get-invoice-by-email.dto";
-import ListTransactionsDto from "../models/list-transactions.dto";
-import BillingDetail from "../models/billing-detail";
-import Subuser from "../models/subuser";
-import Invoice from "../models/invoice";
-import Transaction from "../models/transaction";
-import BalanceDetail from "../models/balance-detail";
-import TransactionItem from "../models/transaction-item";
+import BillingDetailSummaryDto from "../models/billing-detail-summary.dto.ts";
+import UpdateAccountInfoDto from "../models/update-account-info.dto.ts";
+import UpdatePasswordDto from "../models/update-password.dto.ts";
+import UpdateBrandingDto from "../models/update-branding.dto.ts";
+import CreateSubUserDto from "../models/create-sub-user.dto.ts";
+import UpdateSubUserDto from "../models/update-sub-user.dto.ts";
+import UpdateFraudSettingsDto from "../models/update-fraud-settings.dto.ts";
+import GetInvoiceDto from "../models/get-invoice.dto.ts";
+import GetInvoiceByEmailDto from "../models/get-invoice-by-email.dto.ts";
+import ListTransactionsDto from "../models/list-transactions.dto.ts";
+import BillingDetail from "../models/billing-detail.ts";
+import Subuser from "../models/subuser.ts";
+import Invoice from "../models/invoice.ts";
+import Transaction from "../models/transaction.ts";
+import BalanceDetail from "../models/balance-detail.ts";
+import TransactionItem from "../models/transaction-item.ts";
 
 export default interface IUserBuilder {
     /**
