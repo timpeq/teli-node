@@ -38,7 +38,7 @@ import ICallApiBuilder from "./call-api/contracts/call-api-builder.interface.ts"
 import IDidsBuilder from "./dids/contracts/dids-builder.interface.ts";
 import IUserDidsBuilder from "./user-dids/contracts/user-dids-builder.interface.ts";
 
-export class TeliNode {
+export class Teli {
     private httpClient: HttpClient;
     public sms: ISMSBuilder;
     public mms: IMMSBuilder;
@@ -89,6 +89,3 @@ export class TeliNode {
         this.emergency = EmergencyBuilder(this.httpClient);
     }
 }
-
-export default TeliNode;
-// module.exports = TeliNode;
