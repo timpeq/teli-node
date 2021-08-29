@@ -1,12 +1,8 @@
-import axios, {AxiosInstance, AxiosRequestConfig, Method,} from 'axios';
-
 export default class HttpClient {
-    private axiosInstance: AxiosInstance;
     private _callApiSIDToken: string;
     private _apiToken: string;
 
     constructor(callApiSIDToken: string, apiToken: string) {
-        this.axiosInstance = axios.create();
         this._callApiSIDToken = callApiSIDToken;
         this._apiToken = apiToken;
     }
@@ -20,22 +16,15 @@ export default class HttpClient {
     }
 
     public async fetch<T>(
-        method: Method,
+        method: string,
         url: string,
         data: any = {},
-        addtionalConfig: Partial<AxiosRequestConfig> = {},
+        additionalConfig: Partial<RequestInit> = {},
     ): Promise<T> {
-        const config: AxiosRequestConfig = {
-            method: <Method>method,
-            url,
-            auth: {
-                username: this.apiToken,
-                password: ''
-            },
-            params: {
-                token: this.apiToken
-            },
-            ...addtionalConfig,
+        console.log(method)
+        const config: RequestInit = {
+            method: method,
+            ...additionalConfig,
         };
 
         Object.keys(data).forEach((key) => {
@@ -44,17 +33,20 @@ export default class HttpClient {
             }
         });
 
-        if (typeof data === "object") {
-            config.params = {
-                ...config.params,
-                ...data,
-            };
-        }
+        // if (typeof data === "object") {
+        //     config.params = {
+        //         ...config.params,
+        //         ...data,
+        //     };
+        // }
+        // config.data = data;
 
-        config.data = data;
+        var fetchURL = new URL(url);
+        fetchURL.search = new URLSearchParams({token:this.apiToken}).toString();
+        console.log(fetchURL.search);
+        const response = await fetch(fetchURL, config);
 
-        const response = await this.axiosInstance.request(config);
-
-        return response.data;
+        return response.json();
+        
     }
 }
