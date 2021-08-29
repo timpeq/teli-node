@@ -1,4 +1,4 @@
-import {SIPAccountType} from "../enums/sip-account-type.enum";
+import {SIPAccountType} from "../enums/sip-account-type.enum.ts";
 
 export default interface UpdateSipAccountDto {
     sipaccount_id: number;

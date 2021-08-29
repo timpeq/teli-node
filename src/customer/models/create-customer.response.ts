@@ -1,4 +1,4 @@
-export default class CreateCustomerResponse {
+export default interface CreateCustomerResponse {
     id: number;
     postpay: string;
     master_id: number;

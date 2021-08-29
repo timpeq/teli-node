@@ -1,3 +1,3 @@
-export default class State {
+export default interface State {
     name: string;
 }

@@ -1,4 +1,4 @@
-const queryString = require('querystring');
+import * as queryString from "https://deno.land/x/querystring@v1.0.2/mod.js";
 
 export function parseQueryString(query: string) {
     if (query.startsWith('?')) {

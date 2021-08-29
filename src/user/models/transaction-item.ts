@@ -1,4 +1,4 @@
-export default class TransactionItem {
+export default interface TransactionItem {
     id: number;
     transaction_id: number;
     product_type: string;

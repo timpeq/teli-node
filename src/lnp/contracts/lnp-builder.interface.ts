@@ -1,4 +1,4 @@
-import CreateLnpOrderDto from "../models/create-lnp-order.dto";
+import CreateLnpOrderDto from "../models/create-lnp-order.dto.ts";
 
 export default interface ILNPBuilder {
     /**

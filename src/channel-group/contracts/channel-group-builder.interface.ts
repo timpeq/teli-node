@@ -1,6 +1,6 @@
-import CreateChannelGroupDto from "../models/create-channel-group.dto";
-import UpdateChannelGroupDto from "../models/update-channel-group.dto";
-import ChannelGroup from "../models/channel-group";
+import CreateChannelGroupDto from "../models/create-channel-group.dto.ts";
+import UpdateChannelGroupDto from "../models/update-channel-group.dto.ts";
+import ChannelGroup from "../models/channel-group.ts";
 
 export default interface IChannelGroupBuilder {
     /**

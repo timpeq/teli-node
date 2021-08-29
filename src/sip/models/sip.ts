@@ -1,4 +1,4 @@
-export default class SIP {
+export default interface SIP {
     id: number;
     account_type: string;
     domain: string;

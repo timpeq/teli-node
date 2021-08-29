@@ -1,4 +1,4 @@
-export default class Client{
+export default interface Client{
     sid: string;
     date_created: string;
     date_updated: string;

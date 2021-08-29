@@ -1,4 +1,4 @@
-export default class CustomerRates {
+export default interface CustomerRates {
     standard_local_mrc: number;
     standard_local_nrc: number;
     standard_local_pm: number;

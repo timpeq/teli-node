@@ -1,8 +1,8 @@
-import IResellerBuilder from "../contracts/reseller-builder.interface";
-import CreateResellerDto from "../models/create-reseller.dto";
-import HttpClient from "../../shared/http/http-client";
-import UpdateResellerDto from "../models/update-reseller.dto";
-import UpdateResellerBrandingDto from "../models/update-reseller-branding.dto";
+import IResellerBuilder from "../contracts/reseller-builder.interface.ts";
+import CreateResellerDto from "../models/create-reseller.dto.ts";
+import HttpClient from "../../shared/http/http-client.ts";
+import UpdateResellerDto from "../models/update-reseller.dto.ts";
+import UpdateResellerBrandingDto from "../models/update-reseller-branding.dto.ts";
 
 const ResellerBuilder = (httpClient: HttpClient): IResellerBuilder => {
     return {

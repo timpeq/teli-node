@@ -1,13 +1,13 @@
-import HttpClient from "../../shared/http/http-client";
-import IUserDidsBuilderInterface from "../contracts/user-dids-builder.interface";
-import Phone from "../models/phone";
-import {NumberTypeEnum} from "../enums/number-type.enum";
-import EnableCnamDto from "../models/enable-cnam.dto";
-import DisableCnamDto from "../models/disable-cnam.dto";
-import UpdateFlowDto from "../models/update-flow.dto";
-import CreateFlowDto from "../models/create-flow.dto";
-import SetPhoneListingDto from "../models/set-phone-listing.dto";
-import SetCallForwardingDto from "../models/set-call-forwarding.dto";
+import HttpClient from "../../shared/http/http-client.ts";
+import IUserDidsBuilderInterface from "../contracts/user-dids-builder.interface.ts";
+import Phone from "../models/phone.ts";
+import {NumberTypeEnum} from "../enums/number-type.enum.ts";
+import EnableCnamDto from "../models/enable-cnam.dto.ts";
+import DisableCnamDto from "../models/disable-cnam.dto.ts";
+import UpdateFlowDto from "../models/update-flow.dto.ts";
+import CreateFlowDto from "../models/create-flow.dto.ts";
+import SetPhoneListingDto from "../models/set-phone-listing.dto.ts";
+import SetCallForwardingDto from "../models/set-call-forwarding.dto.ts";
 
 const UserDidsBuilder = (httpClient: HttpClient): IUserDidsBuilderInterface => {
     return{

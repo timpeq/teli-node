@@ -1,4 +1,4 @@
-export default class CNAMLookup {
+export default interface CNAMLookup {
     name: string;
     number: string;
 }

@@ -1,4 +1,4 @@
-export default class Voicemail {
+export default interface Voicemail {
     did: number;
     date: string;
     time_orig: string;

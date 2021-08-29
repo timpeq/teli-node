@@ -1,12 +1,12 @@
-import ICustomerBuilder from "../contracts/customer-builder.interface";
-import CreateCustomerDto from "../models/create-customer.dto";
-import HttpClient from "../../shared/http/http-client";
-import UpdateCustomerDto from "../models/update-customer.dto";
-import UpdateCustomerBrandDto from "../models/update-customer-brand.dto";
-import SetChannelLimitDto from "../models/set-channel-limit.dto";
-import CreateCustomerResponse from "../models/create-customer.response";
-import Customer from "../models/customer";
-import CustomerRates from "../models/customer-rates";
+import ICustomerBuilder from "../contracts/customer-builder.interface.ts";
+import CreateCustomerDto from "../models/create-customer.dto.ts";
+import HttpClient from "../../shared/http/http-client.ts";
+import UpdateCustomerDto from "../models/update-customer.dto.ts";
+import UpdateCustomerBrandDto from "../models/update-customer-brand.dto.ts";
+import SetChannelLimitDto from "../models/set-channel-limit.dto.ts";
+import CreateCustomerResponse from "../models/create-customer.response.ts";
+import Customer from "../models/customer.ts";
+import CustomerRates from "../models/customer-rates.ts";
 
 const CustomerBuilder = (httpClient: HttpClient): ICustomerBuilder => {
     return {

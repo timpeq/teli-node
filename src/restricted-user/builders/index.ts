@@ -1,8 +1,8 @@
-import HttpClient from "../../shared/http/http-client";
-import IRestrictedUser from "../contracts/restricted-user.interface";
-import RestrictedUser from "../models/restricted-user";
-import RestrictedUserRates from "../models/restricted-user-rates";
-import RestrictedUserGroupPermission from "../models/restricted-user-group-permission";
+import HttpClient from "../../shared/http/http-client.ts";
+import IRestrictedUser from "../contracts/restricted-user.interface.ts";
+import RestrictedUser from "../models/restricted-user.ts";
+import RestrictedUserRates from "../models/restricted-user-rates.ts";
+import RestrictedUserGroupPermission from "../models/restricted-user-group-permission.ts";
 
 const RestrictedUserBuilder = (httpClient: HttpClient): IRestrictedUser => {
     return {

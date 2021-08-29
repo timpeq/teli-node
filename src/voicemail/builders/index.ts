@@ -1,7 +1,7 @@
-import IVoicemailBuilder from "../contracts/voicemail-builder.interface";
-import CreateVoicemailAccountDto from "../models/create-voicemail-account.dto";
-import HttpClient from "../../shared/http/http-client";
-import Voicemail from "../models/voicemail";
+import IVoicemailBuilder from "../contracts/voicemail-builder.interface.ts";
+import CreateVoicemailAccountDto from "../models/create-voicemail-account.dto.ts";
+import HttpClient from "../../shared/http/http-client.ts";
+import Voicemail from "../models/voicemail.ts";
 
 const VoicemailBuilder = (httpClient: HttpClient): IVoicemailBuilder => {
     return {

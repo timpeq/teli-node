@@ -1,4 +1,4 @@
-export default class CallRecord {
+export default interface CallRecord {
     id: number;
     record_date: string;
     user_id: number;

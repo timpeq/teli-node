@@ -1,5 +1,5 @@
-import SendFaxDto from "../models/send-fax.dto";
-import Fax from "../models/fax";
+import SendFaxDto from "../models/send-fax.dto.ts";
+import Fax from "../models/fax.ts";
 
 export default interface IFaxBuilder {
     /**

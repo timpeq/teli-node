@@ -1,24 +1,28 @@
-# Teli Node
+# Teli ~~Node~~ Deno
 
-[![NPM](https://nodei.co/npm/teli-node.png?downloads=true&stars=true)](https://nodei.co/npm/teli-node/)
+This is a fork of [Teli Node](https://github.com/IrinaBocearov/teli-node) modified to work with [Deno](https://deno.land/).
+
+I'm not affiliated with [Teli](https://www.teli.net) in any way other than being a customer.
+
+This is still work-in-progress, but it is at least partially usable.
 
 ## Documentation
 The documentation for the Tele API can be found [here](https://apidocs.teleapi.net/api/).
 
 ## Basic Example
-```javascript
-const callApiSIDToken = process.env.TELI_CALL_API_SID_TOKEN; // Your Call API SID Token from https://control.teli.net
-const apiToken = process.env.TELI_API_TOKEN;   // Your API Token from https://control.teli.net
+```typescript
+import { Teli } from "https://raw.githubusercontent.com/timpeq/teli-node/teli-deno/src/index.ts"
 
-const client = new teli(callApiSIDToken, apiToken);
+const callApiSIDToken = Deno.env.get("TELI_CALL_API_SID_TOKEN"); // Your Call API SID Token from https://control.teli.net
+const apiToken = Deno.env.get("TELI_API_TOKEN");   // Your API Token from https://control.teli.net
 
-client.sms.send({
+const teli = new Teli(callApiSIDToken, apiToken);
+
+console.log(await teli.userDids.listAll());
+
+teli.sms.send({
     destination: 123,
     source: 456,
     message: 'Hello World'
 })
 ```
-## Getting help
-If you need help installing or using the library, please [file a support ticket](https://teli.net/contact/) here.
-
-If you've instead found a bug in the library or would like new features added, go ahead and open issues or pull requests against this repo!

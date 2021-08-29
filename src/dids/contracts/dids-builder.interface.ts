@@ -1,8 +1,8 @@
-import State from "../models/state";
-import ListLocalNumberDto from "../models/list-local-number.dto";
-import InternationalCountryDto from "../models/international-country.dto";
-import InternationalStateDto from "../models/international-state.dto";
-import OrderSingleNumberDto from "../models/order-single-number.dto";
+import State from "../models/state.ts";
+import ListLocalNumberDto from "../models/list-local-number.dto.ts";
+import InternationalCountryDto from "../models/international-country.dto.ts";
+import InternationalStateDto from "../models/international-state.dto.ts";
+import OrderSingleNumberDto from "../models/order-single-number.dto.ts";
 
 export default interface IDidsBuilderInterface{
     /**

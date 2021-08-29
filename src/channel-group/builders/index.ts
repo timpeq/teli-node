@@ -1,8 +1,8 @@
-import HttpClient from "../../shared/http/http-client";
-import IChannelGroupBuilder from "../contracts/channel-group-builder.interface";
-import CreateChannelGroupDto from "../models/create-channel-group.dto";
-import UpdateChannelGroupDto from "../models/update-channel-group.dto";
-import ChannelGroup from "../models/channel-group";
+import HttpClient from "../../shared/http/http-client.ts";
+import IChannelGroupBuilder from "../contracts/channel-group-builder.interface.ts";
+import CreateChannelGroupDto from "../models/create-channel-group.dto.ts";
+import UpdateChannelGroupDto from "../models/update-channel-group.dto.ts";
+import ChannelGroup from "../models/channel-group.ts";
 
 const ChannelGroupBuilder = (httpClient: HttpClient): IChannelGroupBuilder => {
     return {

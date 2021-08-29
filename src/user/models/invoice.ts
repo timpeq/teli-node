@@ -1,4 +1,4 @@
-export default class Invoice {
+export default interface Invoice {
     channel_groups: number;
     channel_groups_price: number;
     local_numbers: number;

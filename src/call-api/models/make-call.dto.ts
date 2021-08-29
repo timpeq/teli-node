@@ -1,14 +1,14 @@
-import {StatusCallbackEventEnum} from "../enums/status-callback-event.enum";
+import {StatusCallbackEventEnum} from "../enums/status-callback-event.enum.ts";
 
-export default class MakeCallDto {
+export default interface MakeCallDto {
     From: number;
     To: number;
     Url: string;
-    Method?: string = 'POST';
+    Method?: string;
     FallbackUrl?: string;
-    FallbackMethod?: string = 'POST';
-    StatusCallbackEvent?: StatusCallbackEventEnum | string = 'none';
-    StatusCallback?: string = 'none';
-    StatusCallbackMethod?: string = 'POST';
-    Timeout?: number = 60;
+    FallbackMethod?: string;
+    StatusCallbackEvent?: StatusCallbackEventEnum | string;
+    StatusCallback?: string;
+    StatusCallbackMethod?: string;
+    Timeout?: number;
 }

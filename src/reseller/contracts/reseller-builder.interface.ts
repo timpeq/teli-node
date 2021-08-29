@@ -1,6 +1,6 @@
-import CreateResellerDto from "../models/create-reseller.dto";
-import UpdateResellerDto from "../models/update-reseller.dto";
-import UpdateResellerBrandingDto from "../models/update-reseller-branding.dto";
+import CreateResellerDto from "../models/create-reseller.dto.ts";
+import UpdateResellerDto from "../models/update-reseller.dto.ts";
+import UpdateResellerBrandingDto from "../models/update-reseller-branding.dto.ts";
 
 export default interface IResellerBuilder {
     /**

@@ -1,4 +1,4 @@
-export default class Ownership {
+export default interface Ownership {
     status: string;
     spid: number;
     total_ported_spid: number;

@@ -1,6 +1,6 @@
-import LnpNumber from "./lnp-number";
+import LnpNumber from "./lnp-number.ts";
 
-export default class CreateLnpResponse{
+export default interface CreateLnpResponse{
     id: string;
     ticket_id?: string;
     btn: string;

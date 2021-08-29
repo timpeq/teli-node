@@ -1,4 +1,4 @@
-export default class Transaction {
+export default interface Transaction {
     id: number;
     user_id: number;
     child_id?: number;

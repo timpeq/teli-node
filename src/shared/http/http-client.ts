@@ -1,60 +1,39 @@
-import axios, {AxiosInstance, AxiosRequestConfig, Method,} from 'axios';
-
 export default class HttpClient {
-    private axiosInstance: AxiosInstance;
-    private _callApiSIDToken: string;
-    private _apiToken: string;
+    readonly callApiSIDToken: string;
+    readonly apiToken: string;
 
     constructor(callApiSIDToken: string, apiToken: string) {
-        this.axiosInstance = axios.create();
-        this._callApiSIDToken = callApiSIDToken;
-        this._apiToken = apiToken;
-    }
-
-    get callApiSIDToken(): string {
-        return this._callApiSIDToken;
-    }
-
-    get apiToken(): string {
-        return this._apiToken;
+        this.callApiSIDToken = callApiSIDToken;
+        this.apiToken = apiToken;
     }
 
     public async fetch<T>(
-        method: Method,
+        method: string,
         url: string,
         data: any = {},
-        addtionalConfig: Partial<AxiosRequestConfig> = {},
+//        additionalConfig: Partial<RequestInit> = {}, // TODO: Is this used anywhere?
     ): Promise<T> {
-        const config: AxiosRequestConfig = {
-            method: <Method>method,
-            url,
-            auth: {
-                username: this.apiToken,
-                password: ''
-            },
-            params: {
-                token: this.apiToken
-            },
-            ...addtionalConfig,
+        let config:RequestInit;
+        config = {
+            method: method,
         };
+
+        if (method === "POST" || method ==="PUT"){
+          config.body = data;
+        }
+
 
         Object.keys(data).forEach((key) => {
             if (data[key] === null || data[key] === '') {
+                console.debug(`http-client is removing blank or null data. Key: ${key}  Data: ${data}`);
                 delete data[key];
             }
         });
 
-        if (typeof data === "object") {
-            config.params = {
-                ...config.params,
-                ...data,
-            };
-        }
-
-        config.data = data;
-
-        const response = await this.axiosInstance.request(config);
-
-        return response.data;
+        var fetchURL = new URL(url);
+        fetchURL.search = new URLSearchParams({token:this.apiToken, ...data}).toString();
+    
+        const response = await fetch(fetchURL, config);
+        return response.json();
     }
 }

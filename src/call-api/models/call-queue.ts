@@ -1,4 +1,4 @@
-export default class CallQueue{
+export default interface CallQueue{
     sid: string;
     phoneNumber: string;
     accountSid: string;

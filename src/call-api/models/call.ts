@@ -1,3 +1,3 @@
-export default class Call{
+export default interface Call{
 
 }

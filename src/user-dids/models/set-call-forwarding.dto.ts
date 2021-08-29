@@ -1,4 +1,4 @@
-import {RequireOnlyOne} from "../../shared/types/require";
+import {RequireOnlyOne} from "../../shared/types/require.ts";
 
 interface SetCallForwardingBaseDto {
     did_id?: number;

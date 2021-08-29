@@ -1,5 +1,5 @@
-import CallRecord from "../models/recording";
-import GetCallRecordDto from "../models/get-call-record.dto";
+import CallRecord from "../models/recording.ts";
+import GetCallRecordDto from "../models/get-call-record.dto.ts";
 
 export default interface ICallBuilder {
     /**

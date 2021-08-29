@@ -1,6 +1,7 @@
-import {RequireOnlyOne} from "../../shared/types/require";
+import {RequireOnlyOne} from "../../shared/types/require.ts";
 
 interface DisableCnamBaseDto {
+
     did_id: number;
     number: number;
 }

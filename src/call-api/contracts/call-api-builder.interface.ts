@@ -1,11 +1,11 @@
-import MakeCallDto from "../models/make-call.dto";
-import CreateCallQueueDto from "../models/create-call-queue.dto";
-import CreateCallClientDto from "../models/create-call-client.dto";
-import CallQueue from "../models/call-queue";
-import Call from "../models/call";
-import ChangeClientPasswordDto from "../models/change-client-password.dto";
-import Client from "../models/client";
-import ListCallFilterDto from "../models/list-call-filter.dto";
+import MakeCallDto from "../models/make-call.dto.ts";
+import CreateCallQueueDto from "../models/create-call-queue.dto.ts";
+import CreateCallClientDto from "../models/create-call-client.dto.ts";
+import CallQueue from "../models/call-queue.ts";
+import Call from "../models/call.ts";
+import ChangeClientPasswordDto from "../models/change-client-password.dto.ts";
+import Client from "../models/client.ts";
+import ListCallFilterDto from "../models/list-call-filter.dto.ts";
 
 export default interface ICallApiBuilder {
     /**

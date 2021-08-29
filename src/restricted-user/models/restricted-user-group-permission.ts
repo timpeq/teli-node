@@ -1,4 +1,4 @@
-export default class RestrictedUserGroupPermission {
+export default interface RestrictedUserGroupPermission {
     id: number;
     group_name: string;
     group_description: string;

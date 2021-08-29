@@ -1,7 +1,7 @@
-import HttpClient from "../../shared/http/http-client";
-import ICallBuilder from "../contracts/call-builder.interface";
-import CallRecord from "../models/recording";
-import GetCallRecordDto from "../models/get-call-record.dto";
+import HttpClient from "../../shared/http/http-client.ts";
+import ICallBuilder from "../contracts/call-builder.interface.ts";
+import CallRecord from "../models/recording.ts";
+import GetCallRecordDto from "../models/get-call-record.dto.ts";
 
 const CallBuilder = (httpClient: HttpClient): ICallBuilder => {
     return {
