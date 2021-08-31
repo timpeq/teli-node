@@ -30,11 +30,8 @@ export default class HttpClient {
 
         var fetchURL = new URL(url);
         fetchURL.search = new URLSearchParams({token:this.apiToken, ...data}).toString();
-        console.log(fetchURL.search);
         const response = await fetch(fetchURL, config);
-        console.dir(response.url)
         const body = await response.json();
-        console.dir(body);
 
         return body;
     }
