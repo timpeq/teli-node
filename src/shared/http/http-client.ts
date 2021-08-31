@@ -22,18 +22,20 @@ export default class HttpClient {
           config.body = data;
         }
 
-
         Object.keys(data).forEach((key) => {
-            if (data[key] === null || data[key] === '') {
-                console.debug(`http-client is removing blank or null data. Key: ${key}  Data: ${data}`);
+            if (data[key] === null || data[key] === '' || data[key] === undefined) {
                 delete data[key];
             }
         });
 
         var fetchURL = new URL(url);
         fetchURL.search = new URLSearchParams({token:this.apiToken, ...data}).toString();
-    
+        console.log(fetchURL.search);
         const response = await fetch(fetchURL, config);
-        return response.json();
+        console.dir(response.url)
+        const body = await response.json();
+        console.dir(body);
+
+        return body;
     }
 }
